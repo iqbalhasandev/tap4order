@@ -102,7 +102,7 @@ h5 {
 	color: #900C3F;
 	font: 700 1.125rem/1.625rem "Raleway", sans-serif;
 }
- 
+
 h6 {
 	color: #900C3F;
 	font: 700 1rem/1.5rem "Raleway", sans-serif;
@@ -888,7 +888,7 @@ screen and (-ms-high-contrast: none) {
 /************************/
 
 .cards-1 {
-	padding-top: 4rem;
+	padding-top: 1rem;
 	padding-bottom: 1.625rem;
 	text-align: center;
 }
@@ -931,7 +931,7 @@ screen and (-ms-high-contrast: none) {
 /*************************/
 
 .basic-1 {
-	padding-top: 1.625rem;
+	padding-top: 1rem;
 	padding-bottom: 3.75rem;
 }
 
@@ -1522,7 +1522,7 @@ screen and (-ms-high-contrast: none) {
 /***********************/
 
 .form-2 {
-	padding-top: 7rem;
+	padding-top: 1rem;
 	padding-bottom: 6.25rem;
 	background: url('../images/contact-background.jpg') center center no-repeat;
 	background-size: cover;
@@ -1576,7 +1576,7 @@ screen and (-ms-high-contrast: none) {
 /**********************/
 
 .footer {
-	padding-top: 4.625rem;
+	padding-top: 1rem;
 	padding-bottom: 0.5rem;
 }
 
@@ -2306,6 +2306,23 @@ a:hover.back-to-top {
 	.header .image-container {}
 }
 
+@media (max-width: 992px) {
+	hr {
+		display: none;
+	}
+
+	.header .image-container {
+		/* top: 10%; */
+		/* left: 14%; */
+		width: 71% !important;
+		/* padding: 8% 0%; */
+		text-align: center !importan;
+		padding: 0 !importan;
+		vertical-align: middle !importan;
+		margin: auto !important;
+	}
+}
+
 @media (min-width: 1280px) {
 	.header .image-container {
 		top: 55%;
@@ -2487,10 +2504,19 @@ input[type="file"] {
 .custom-label {}
 
 .custom-input {
-	border: 1px solid #900C3F;
+	border: 1px solid;
 	border-radius: 10px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	-ms-border-radius: 10px;
 	-o-border-radius: 10px;
+}
+
+hr {
+	color: #900C3F;
+	border-color: #900C3F;
+	position: absolute;
+	bottom: -16px;
+	left: 0;
+	right: 0;
 }
